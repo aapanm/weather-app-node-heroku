@@ -1,4 +1,4 @@
-const baseUrl = new URL('http://localhost:3000/weather?')
+const baseUrl = new URL('/weather?')
 
 
 
