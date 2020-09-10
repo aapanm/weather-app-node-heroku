@@ -1,5 +1,3 @@
-console.log('here!');
-
 const baseUrl = new URL('http://localhost:3000/weather?')
 
 
