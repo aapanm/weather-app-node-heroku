@@ -1,4 +1,5 @@
-const baseUrl = new URL('/weather?address=')
+// const baseUrl = new URL('/weather?address=')
+const baseUrl = '/weather?address=';
 
 
 
