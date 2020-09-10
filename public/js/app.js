@@ -1,4 +1,4 @@
-const baseUrl = new URL('/weather?')
+const baseUrl = new URL('/weather?address=')
 
 
 
@@ -13,11 +13,11 @@ weatherForm.addEventListener('submit', ()=>{
 
     const location = search.value;
 
-    baseUrl.search = "";
-    const params = {address:location}
-    Object.keys(params).forEach(key => baseUrl.searchParams.append(key, params[key]))
+    // baseUrl.search = "";
+    // const params = {address:location}
+    // Object.keys(params).forEach(key => baseUrl.searchParams.append(key, params[key]))
     
-    fetch(baseUrl).then((response)=>{
+    fetch(baseUrl+location).then((response)=>{
     response.json().then((data)=>{
        if(data.Error){
            messageOne.textContent = data.Error;
